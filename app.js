@@ -171,16 +171,32 @@ function removeFromCart(index) {
 function buyWhatsApp() {
   if (carrito.length === 0) return;
   
-  let mensaje = '*📋 PEDIDO PAPELERA PRO*\\n\\n';
+  // Group items like cart display
+  const groupedCart = {};
   carrito.forEach(item => {
-    mensaje += `• ${item.name} - $${item.price.toLocaleString()}\\n`;
+    const key = item.name + '-' + item.price;
+    groupedCart[key] = (groupedCart[key] || 0) + 1;
   });
-  mensaje += `\\n💰 *TOTAL: $${carrito.reduce((sum, item) => sum + item.price, 0).toLocaleString()}*`;
+
+  let total = 0;
+  Object.entries(groupedCart).forEach(([key]) => {
+    const [, priceStr] = key.split('-');
+    const price = Number(priceStr);
+    const count = groupedCart[key];
+    total += price * count;
+  });
+
+  let mensaje = 'Productos:';
+  Object.entries(groupedCart).forEach(([key]) => {
+    const [name] = key.split('-');
+    const count = groupedCart[key];
+    mensaje += ` "${name} x${count}"`;
+  });
+  mensaje += `\n"Total de la compra: $${total.toLocaleString()}"\n\n"Nombre:"\n"Apellido:"`;
   
-  const phone = '5491122334455'; // CAMBIA TU NÚMERO AQUÍ
+  const phone = '5491160246291'; // +54 9 11 6024-6291
   window.open(`https://wa.me/${phone}?text=${encodeURIComponent(mensaje)}`, '_blank');
 }
 
 // Inicializar carrito si existe
 updateCartDisplay();
-

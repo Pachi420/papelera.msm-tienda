@@ -1,11 +1,1 @@
-# ✅ PAPELERA PRO - LISTA PARA USO
-
-## Plan Breakdown:
-1. [x] Rename syle.css → style.css (fix HTML link)
-2. [x] + / - buttons for quantity, pro cart UI, improved WhatsApp
-3. [x] Papelera products (6 categories: Escritorio, Lápices, Resmas, Oficina, Artística, Mochilas)
-4. [ ] Install http-server globally (run in PowerShell 7 as Admin: Set-ExecutionPolicy RemoteSigned -Scope CurrentUser; npm install -g http-server)
-5. [ ] Serve app locally and test (http-server or Live Server VSCode extension)
-6. [x] Added cart remove function + more categories/products
-
-🎉 *TIENDA 100% FUNCIONAL - SIN ERRORES*\n\nAbrí index.html en el navegador
+# WhatsApp Message - FINAL VERSION ✅&#10;&#10;Message format:&#10;Productos:&#10;"Producto x2"&#10;"Producto2 x1"&#10;"Total de la compra: $X,XXX"&#10;&#10;"Nombre:"&#10;"Apellido:"&#10;&#10;Updated in app.js. Test ready.
