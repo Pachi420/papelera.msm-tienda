@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papelera Pro - Tienda Online</title>
+  <link rel="stylesheet" href="syle.css">
+</head>
+<body>
+  <header>
+    <h1>📚 Papelera MSM</h1>
+    <input type="text" id="buscador" placeholder="🔍 Buscar cuadernos, biromes...">
+    <div id="carrito-icono">
+      🛒 <span id="contador">0</span>
+    </div>
+  </header>
+
+  <nav id="categorias"></nav>
+
+  <main id="catalogo"></main>
+
+  <!-- CARRITO SLIDEBAR ORIGINAL -->
+  <div id="carrito" class="oculto">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+      <h2>🛒 Mi Carrito</h2>
+      <button onclick="toggleCart()" style="background: none; border: none; font-size: 24px; cursor: pointer;">✕</button>
+    </div>
+    <div id="items-carrito"></div>
+    <div id="total-compra"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
