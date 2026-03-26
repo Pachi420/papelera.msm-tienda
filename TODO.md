@@ -1,1 +1,1 @@
-# WhatsApp Message - FINAL VERSION ✅&#10;&#10;Message format:&#10;Productos:&#10;"Producto x2"&#10;"Producto2 x1"&#10;"Total de la compra: $X,XXX"&#10;&#10;"Nombre:"&#10;"Apellido:"&#10;&#10;Updated in app.js. Test ready.
+# Tasks Completed ✅&#10;&#10;- Fixed WhatsApp buy function (phone + ordered message)&#10;- Added logo to header in index.html&#10;&#10;Open index.html to view.
